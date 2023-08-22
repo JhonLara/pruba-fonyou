@@ -4,7 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
+
 import java.util.Map;
+
 @Entity
 @Getter
 @Setter

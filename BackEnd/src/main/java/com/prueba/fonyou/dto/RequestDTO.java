@@ -1,7 +1,9 @@
-package com.prueba.fonyou.entity;
+package com.prueba.fonyou.dto;
 
 
+import com.prueba.fonyou.entity.TimeZoneEnum;
 import lombok.*;
+
 import java.time.LocalDate;
 import java.util.Map;
 

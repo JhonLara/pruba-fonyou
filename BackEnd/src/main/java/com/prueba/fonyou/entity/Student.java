@@ -27,7 +27,7 @@ public class Student {
     @Column(name = "TIME_ZONE")
     private TimeZoneEnum timeZone;
 
-    @Column(name = "BUY_VALUE")
+    @Column(name = "CITY")
     private String city;
 
     @OneToOne()

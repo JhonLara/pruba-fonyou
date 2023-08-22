@@ -7,9 +7,8 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Clase que obtiene todas las capacidades JPA para la entidad producto
- * 
- * @author Jhon Lara
  *
+ * @author Jhon Lara
  */
 @Repository
 public interface ExamRepository extends JpaRepository<Exam, Long> {

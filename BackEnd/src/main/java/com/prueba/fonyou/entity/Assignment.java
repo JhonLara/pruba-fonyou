@@ -24,7 +24,7 @@ public class Assignment {
     @JoinColumn(name = "ID_EXAM", referencedColumnName = "ID_EXAM")
     private Exam exam;
 
-    @OneToOne(mappedBy = "answer", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "assignment", cascade = CascadeType.ALL)
     private Student student;
 
     @ElementCollection
@@ -35,7 +35,7 @@ public class Assignment {
     @Column(name = "TIME_ZONE")
     private TimeZoneEnum timeZone;
 
-    @Column(name = "BUY_DATE")
+    @Column(name = "ASSIGN_DATE")
     @DateTimeFormat(pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDate date;
 
