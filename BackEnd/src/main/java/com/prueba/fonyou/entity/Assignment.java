@@ -1,5 +1,6 @@
 package com.prueba.fonyou.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -22,6 +23,7 @@ public class Assignment {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "ID_EXAM", referencedColumnName = "ID_EXAM")
+    @JsonBackReference(value = "ID_EXAM")
     private Exam exam;
 
     @OneToOne(mappedBy = "assignment", cascade = CascadeType.ALL)

@@ -37,6 +37,25 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get exam list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fonyou/exam",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"exam"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -57,6 +76,25 @@
 								}
 							}
 						},
+						"url": {
+							"raw": "localhost:8080/fonyou/assign",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"assign"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Assign List",
+					"request": {
+						"method": "GET",
+						"header": [],
 						"url": {
 							"raw": "localhost:8080/fonyou/assign",
 							"host": [
@@ -150,6 +188,25 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get Question List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fonyou/question",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"question"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -170,6 +227,25 @@
 								}
 							}
 						},
+						"url": {
+							"raw": "localhost:8080/fonyou/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get student List",
+					"request": {
+						"method": "GET",
+						"header": [],
 						"url": {
 							"raw": "localhost:8080/fonyou/student",
 							"host": [

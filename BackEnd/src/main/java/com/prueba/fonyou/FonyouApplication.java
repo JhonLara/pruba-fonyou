@@ -8,8 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = "com.prueba.fonyou")
 public class FonyouApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(FonyouApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(FonyouApplication.class, args);
+	}
 
 }

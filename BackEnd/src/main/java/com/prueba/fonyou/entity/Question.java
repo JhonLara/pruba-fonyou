@@ -1,5 +1,6 @@
 package com.prueba.fonyou.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
@@ -36,6 +37,7 @@ public class Question {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "ID_EXAM")
     @JsonProperty(access = Access.WRITE_ONLY)
+    @JsonBackReference(value = "ID_EXAM")
     private Exam exam;
 
 }

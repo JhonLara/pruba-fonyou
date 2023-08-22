@@ -95,8 +95,7 @@ public class FonYouController {
     @PostMapping("/rate-exam")
     public ResponseEntity<String> rateExam(@RequestBody RequestDTO requestDTO) {
         try {
-            fonYouService.rateExam(requestDTO);
-            return ResponseEntity.status(HttpStatus.OK).build();
+            return ResponseEntity.status(HttpStatus.OK).body("La calificación fue " + fonYouService.rateExam(requestDTO));
         } catch (FonYouException exc) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exc.getMessage());
         }

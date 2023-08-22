@@ -1,5 +1,6 @@
 package com.prueba.fonyou.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,6 +21,7 @@ public class Exam {
     private Long idExam;
 
     @OneToMany(mappedBy = "exam", cascade = CascadeType.ALL)
+    @JsonBackReference(value = "exam")
     private List<Question> questionList;
 
     @OneToOne(mappedBy = "exam")
