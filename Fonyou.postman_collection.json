@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "d9761992-226b-4bba-b829-75eed2e3efe9",
+		"name": "Fonyou",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29126235",
+		"_collection_link": "https://gold-star-944695.postman.co/workspace/FonYou~5adf1790-5ad3-4622-ba29-635d8be47728/collection/29126235-d9761992-226b-4bba-b829-75eed2e3efe9?action=share&source=collection_link&creator=29126235"
+	},
+	"item": [
+		{
+			"name": "Exams",
+			"item": [
+				{
+					"name": "Create exam",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/fonyou/exam",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"exam"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Process",
+			"item": [
+				{
+					"name": "Assign Exams",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"timeZone\": \"COLOMBIA\", \r\n    \"date\": \"2023-10-28\",\r\n    \"idExam\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/fonyou/assign",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"assign"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Record anwers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idAnswer\": 6,\r\n     \"answers\":{\r\n         \"1L\":\"B\"\r\n      } \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/fonyou/record-answers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"record-answers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rate exam",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idAnswer\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/fonyou/rate-exam",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"rate-exam"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Questions",
+			"item": [
+				{
+					"name": "Create Question",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fonyou/question",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"question"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "Create student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jhon Lara\",\r\n    \"age\": 29,\r\n    \"timeZone\": \"COLOMBIA\",\r\n    \"city\": \"Armenia\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/fonyou/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fonyou",
+								"student"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
